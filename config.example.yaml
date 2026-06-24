@@ -1,0 +1,22 @@
+USER:
+  initials: "AS"      # User types their initials here (e.g., AS for Awan Sibbir)
+
+TELEGRAM:
+  bot_token: "YOUR_BOT_TOKEN_HERE"      # Replace with your real token for test
+  chat_id: "YOUR_CHAT_ID_HERE"          # Replace with your real chat ID
+
+API:
+  url: "https://jsonplaceholder.typicode.com/posts/1"
+  method: "GET"
+  headers:
+    Content-Type: "application/json"
+  auth:
+    type: "none"    # basic / bearer / none
+    username: ""
+    password: ""
+  response_field: "id"
+
+MONITOR:
+  check_interval_minutes: 1             # 1-minute refresh for instant feedback
+  alert_threshold: 0                    # Triggers immediately (since API returns 1 > 0)
+  alert_on_change: true
