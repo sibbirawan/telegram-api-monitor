@@ -14,9 +14,11 @@ API:
     type: "none"    # basic / bearer / none
     username: ""
     password: ""
+    token: ""
   response_field: "id"
 
 MONITOR:
   check_interval_minutes: 1             # 1-minute refresh for instant feedback
   alert_threshold: 0                    # Triggers immediately (since API returns 1 > 0)
   alert_on_change: true
+  alert_cooldown_minutes: 30            # Minimum minutes between alerts

@@ -9,6 +9,8 @@ credentials.json
 *.xls
 *.csv
 *.txt
+GITHUB_PUSH_INSTRUCTIONS.md
+SANITATION_REPORT.md
 __pycache__/
 *.pyc
 .venv/

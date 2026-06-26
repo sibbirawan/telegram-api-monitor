@@ -51,17 +51,18 @@ pip install -r requirements.txt
 
 ## Configure
 
-1. Copy config.example.yaml to config.yaml
+1. Copy `config.example.yaml` to `config.yaml`
 2. Fill in your values (Telegram token, chat ID, API URL, threshold)
-3. Get a Telegram bot token from @BotFather on Telegram
-4. Get your chat ID from @userinfobot on Telegram
+3. Optionally create a `.env` file from `.env.example` and set sensitive values there
+4. Get a Telegram bot token from @BotFather on Telegram
+5. Get your chat ID from @userinfobot on Telegram
 
 ---
 
 ## Run
 
 ```
-python monitor.py
+python monitor.py --config config.yaml
 ```
 
 ## Test (no API or Telegram token needed)
@@ -76,7 +77,7 @@ python monitor.py --test
 
 1. Open Task Scheduler and create a Basic Task
 2. Trigger: At startup or daily at a fixed time
-3. Action: python C:\Projects\telegram-api-monitor\monitor.py
+3. Action: python monitor.py --config config.yaml
 4. Done — runs automatically without manual intervention
 
 ---
